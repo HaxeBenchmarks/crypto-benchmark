@@ -1,0 +1,2 @@
+-cp build/sha256
+--run Build
