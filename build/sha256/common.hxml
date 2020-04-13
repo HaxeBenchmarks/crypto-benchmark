@@ -1,6 +1,5 @@
 -cp src
 
--lib crypto
 -lib benchmark-helper
 
 -main Sha256Benchmark
