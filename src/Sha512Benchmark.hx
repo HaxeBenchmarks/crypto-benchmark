@@ -6,8 +6,10 @@ class Sha512Benchmark {
 		var startTime = Timer.stamp();
 
 		var allHash:StringBuf = new StringBuf();
-		for (text in Data.DATA) {
-			allHash.add(Sha512.encode(text));
+		for (index in 0...10) {
+			for (text in Data.DATA) {
+				allHash.add(Sha512.encode(text));
+			}
 		}
 
 		Sha512.encode(Data.DATA.join(""));
