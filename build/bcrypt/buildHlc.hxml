@@ -1,0 +1,2 @@
+-hl out/hl/BCryptBenchmark.c
+-cmd gcc -O3 -o out/hl/BCryptBenchmark -std=c11 -I out/hl $HASHLINK_CC_PARAMS out/hl/BCryptBenchmark.c -lhl

@@ -1,0 +1,25 @@
+{
+  "name": "crypto-benchmark",
+  "version": "1.0.0",
+  "description": "Haxe benchmark doing crypto",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaxeBenchmarks/crypto-benchmark.git"
+  },
+  "keywords": [
+    "benchmark",
+    "haxe",
+    "json"
+  ],
+  "author": {
+    "name": "Alexander Blum",
+    "email": "Alexander.Blum@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/HaxeBenchmarks/crypto-benchmark/issues"
+  },
+  "devDependencies": {
+    "lix": "^15.8.11"
+  },
+  "homepage": "https://github.com/HaxeBenchmarks/crypto-benchmark#readme"
+}

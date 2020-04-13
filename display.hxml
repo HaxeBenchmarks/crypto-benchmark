@@ -1,0 +1,7 @@
+-lib crypto
+-lib benchmark-helper
+
+-cp src
+
+Sha512Benchmark
+BCryptBenchmark
