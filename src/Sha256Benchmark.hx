@@ -6,7 +6,7 @@ class Sha256Benchmark {
 		var startTime = Timer.stamp();
 
 		var allHash:StringBuf = new StringBuf();
-		for (index in 0...10) {
+		for (index in 0...100) {
 			for (text in Data.DATA) {
 				allHash.add(Sha256.encode(text));
 			}
