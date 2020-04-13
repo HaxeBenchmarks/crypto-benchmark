@@ -2,7 +2,7 @@ import haxe.Timer;
 import haxe.crypto.BCrypt;
 
 class BCryptBenchmark {
-	private static inline var LIMIT_DATA:Int = 13;
+	private static inline var LIMIT_DATA:Int = 24;
 
 	public function new() {
 		var startTime = Timer.stamp();
@@ -10,17 +10,13 @@ class BCryptBenchmark {
 		var allHashes:Array<String> = [];
 		for (index in 0...LIMIT_DATA) {
 			var text:String = Data.DATA[index];
-			var salt:String = BCrypt.generateSalt(6 + (index % 13));
+			var salt:String = BCrypt.generateSalt(6 + (index % 6));
 			allHashes.push(BCrypt.encode(text, salt));
 		}
-		var salt:String = BCrypt.generateSalt(15);
-		allHashes.push(BCrypt.encode(Data.DATA.join(""), salt));
 
 		for (index in 0...LIMIT_DATA) {
-			var text:String = Data.DATA[index];
-			BCrypt.verify(text, allHashes[index]);
+			BCrypt.verify(Data.DATA[index], allHashes[index]);
 		}
-		BCrypt.verify(Data.DATA.join(""), allHashes[allHashes.length - 1]);
 
 		printStats(Timer.stamp() - startTime);
 	}
