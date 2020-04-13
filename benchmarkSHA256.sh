@@ -16,5 +16,5 @@ mono out/cs/bin/Sha256Benchmark.exe $DATA
 haxe build/sha256/common.hxml --run Sha256Benchmark $DATA
 php out/php/index.php $DATA
 neko out/Sha256Benchmark.n $DATA
-python3 out/Sha256Benchmark.py $DATA
+# python3 out/Sha256Benchmark.py $DATA
 # lua out/Sha256Benchmark.lua $DATA
