@@ -13,7 +13,7 @@ java -jar out/jvm/BCryptBenchmark.jar $DATA
 hl out/BCryptBenchmark.hl $DATA
 ./out/hl/BCryptBenchmark $DATA
 mono out/cs/bin/BCryptBenchmark.exe $DATA
-haxe build/common.hxml --run BCryptBenchmark $DATA
+haxe build/bcrypt/common.hxml --run BCryptBenchmark $DATA
 php out/php/index.php $DATA
 neko out/BCryptBenchmark.n $DATA
 python3 out/BCryptBenchmark.py $DATA

@@ -9,17 +9,14 @@ class BCryptBenchmark {
 
 		var allHashes:Array<String> = [];
 		for (index in 0...LIMIT_DATA) {
-			trace(index);
 			var text:String = Data.DATA[index];
 			var salt:String = BCrypt.generateSalt(6 + (index % 13));
-			trace(salt);
 			allHashes.push(BCrypt.encode(text, salt));
 		}
 		var salt:String = BCrypt.generateSalt(15);
 		allHashes.push(BCrypt.encode(Data.DATA.join(""), salt));
 
 		for (index in 0...LIMIT_DATA) {
-			trace(index);
 			var text:String = Data.DATA[index];
 			BCrypt.verify(text, allHashes[index]);
 		}

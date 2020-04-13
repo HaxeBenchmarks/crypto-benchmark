@@ -13,7 +13,7 @@ java -jar out/jvm/Sha512Benchmark.jar $DATA
 hl out/Sha512Benchmark.hl $DATA
 ./out/hl/Sha512Benchmark $DATA
 mono out/cs/bin/Sha512Benchmark.exe $DATA
-haxe build/common.hxml --run Sha512Benchmark $DATA
+haxe build/sha512/common.hxml --run Sha512Benchmark $DATA
 php out/php/index.php $DATA
 neko out/Sha512Benchmark.n $DATA
 python3 out/Sha512Benchmark.py $DATA
