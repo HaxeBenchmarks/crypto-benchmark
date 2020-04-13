@@ -25,7 +25,7 @@ pipeline {
                 echo 'Preparing build folders for Haxe 3'
                 sh '''
                 cd versions/Haxe-3
-                ln -sfn ../../benchmark.sh . 
+                ln -sfn ../../benchmarkSHA512.sh benchmark.sh
                 ln -sfn ../../build 
                 ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
@@ -39,7 +39,7 @@ pipeline {
                 echo 'Preparing build folders for Haxe 4'
                 sh '''
                 cd versions/Haxe-4
-                ln -sfn ../../benchmark.sh . 
+                ln -sfn ../../benchmarkSHA512.sh benchmark.sh
                 ln -sfn ../../build 
                 ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
@@ -53,7 +53,7 @@ pipeline {
                 echo 'Preparing build folders for Haxe nightly'
                 sh '''
                 cd versions/Haxe-nightly
-                ln -sfn ../../benchmark.sh . 
+                ln -sfn ../../benchmarkSHA512.sh benchmark.sh
                 ln -sfn ../../build 
                 ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
