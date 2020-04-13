@@ -16,5 +16,5 @@ mono out/cs/bin/BCryptBenchmark.exe $DATA
 haxe build/bcrypt/common.hxml --run BCryptBenchmark $DATA
 php out/php/index.php $DATA
 neko out/BCryptBenchmark.n $DATA
-python3 out/BCryptBenchmark.py $DATA
+# python3 out/BCryptBenchmark.py $DATA
 # lua out/BCryptBenchmark.lua $DATA
