@@ -25,42 +25,42 @@ pipeline {
                 echo 'Preparing build folders for Haxe 3'
                 sh '''
                 cd versions/Haxe-3
-                ln -sfn ../../benchmarkSHA512.sh benchmark.sh
+                ln -sfn ../../benchmarkSHA256.sh benchmark.sh
                 ln -sfn ../../build 
-                ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
+                ln -sfn ../../buildAllSHA256.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
                 ln -sfn ../../haxe3_libraries/ haxe_libraries 
                 ln -sfn ../../haxelib.json . 
                 ln -sfn ../../data data
-                ln -sfn /home/benchmarkdata/crypto-benchmark/SHA512/Haxe-3 results 
+                ln -sfn /home/benchmarkdata/crypto-benchmark/SHA256/Haxe-3 results 
                 ln -sfn ../../src 
                 '''
 
                 echo 'Preparing build folders for Haxe 4'
                 sh '''
                 cd versions/Haxe-4
-                ln -sfn ../../benchmarkSHA512.sh benchmark.sh
+                ln -sfn ../../benchmarkSHA256.sh benchmark.sh
                 ln -sfn ../../build 
-                ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
+                ln -sfn ../../buildAllSHA256.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
                 ln -sfn ../../haxe_libraries/ haxe_libraries 
                 ln -sfn ../../haxelib.json . 
                 ln -sfn ../../data data
-                ln -sfn /home/benchmarkdata/crypto-benchmark/SHA512/Haxe-4 results 
+                ln -sfn /home/benchmarkdata/crypto-benchmark/SHA256/Haxe-4 results 
                 ln -sfn ../../src 
                 '''
 
                 echo 'Preparing build folders for Haxe nightly'
                 sh '''
                 cd versions/Haxe-nightly
-                ln -sfn ../../benchmarkSHA512.sh benchmark.sh
+                ln -sfn ../../benchmarkSHA256.sh benchmark.sh
                 ln -sfn ../../build 
-                ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
+                ln -sfn ../../buildAllSHA256.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
                 ln -sfn ../../haxe_libraries/ haxe_libraries 
                 ln -sfn ../../haxelib.json . 
                 ln -sfn ../../data data
-                ln -sfn /home/benchmarkdata/crypto-benchmark/SHA512/Haxe-nightly results 
+                ln -sfn /home/benchmarkdata/crypto-benchmark/SHA256/Haxe-nightly results 
                 ln -sfn ../../src 
                 '''
             }
