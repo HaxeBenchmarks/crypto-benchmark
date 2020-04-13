@@ -16,7 +16,7 @@ class Build {
 		callLix("build/bcrypt/buildJvm.hxml", "JVM");
 		callLix("build/bcrypt/buildHl.hxml", "HL/Jit");
 		callLix("build/bcrypt/buildHlc.hxml", "HL/C");
-		callLix("build/bcrypt/bcrypt/buildJs.hxml", "JS/ES5");
+		callLix("build/bcrypt/buildJs.hxml", "JS/ES5");
 		callLix("build/bcrypt/buildJsES6.hxml", "JS/ES6");
 		callLix("build/bcrypt/buildNeko.hxml", "Neko");
 		callLix("build/bcrypt/buildPhp.hxml", "PHP7");
