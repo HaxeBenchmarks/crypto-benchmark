@@ -9,18 +9,18 @@ class Build {
 		run all build files
 	**/
 	public static function main() {
-		callLix("build/buildCpp.hxml", "C++");
-		callLix("build/buildCppGCGen.hxml", "C++ (HXCPP_GC_GENERATIONAL)");
-		callLix("build/buildCs.hxml", "C#");
-		callLix("build/buildJava.hxml", "Java");
-		callLix("build/buildJvm.hxml", "JVM");
-		callLix("build/buildHl.hxml", "HL/Jit");
-		callLix("build/buildHlc.hxml", "HL/C");
-		callLix("build/buildJs.hxml", "JS/ES5");
-		callLix("build/buildJsES6.hxml", "JS/ES6");
-		callLix("build/buildNeko.hxml", "Neko");
-		callLix("build/buildPhp.hxml", "PHP7");
-		callLix("build/buildPython.hxml", "Python");
+		callLix("build/bcrypt/buildCpp.hxml", "C++");
+		callLix("build/bcrypt/buildCppGCGen.hxml", "C++ (HXCPP_GC_GENERATIONAL)");
+		callLix("build/bcrypt/buildCs.hxml", "C#");
+		callLix("build/bcrypt/buildJava.hxml", "Java");
+		callLix("build/bcrypt/buildJvm.hxml", "JVM");
+		callLix("build/bcrypt/buildHl.hxml", "HL/Jit");
+		callLix("build/bcrypt/buildHlc.hxml", "HL/C");
+		callLix("build/bcrypt/bcrypt/buildJs.hxml", "JS/ES5");
+		callLix("build/bcrypt/buildJsES6.hxml", "JS/ES6");
+		callLix("build/bcrypt/buildNeko.hxml", "Neko");
+		callLix("build/bcrypt/buildPhp.hxml", "PHP7");
+		callLix("build/bcrypt/buildPython.hxml", "Python");
 	}
 
 	/**
@@ -31,7 +31,7 @@ class Build {
 	**/
 	public static function callLix(buildFile:String, title:String) {
 		var startTime = Timer.stamp();
-		var exitCode:Int = Sys.command("npx", ["haxe", "build/common.hxml", buildFile]);
+		var exitCode:Int = Sys.command("npx", ["haxe", "build/bcrypt/common.hxml", buildFile]);
 		var exitText:String = "";
 		if (exitCode != 0) {
 			exitText = ' - exitCode: $exitCode';
