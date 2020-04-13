@@ -1,0 +1,3 @@
+-lib hxnodejs
+-D js-es=6
+-js out/Sha512Benchmark.es6.js
