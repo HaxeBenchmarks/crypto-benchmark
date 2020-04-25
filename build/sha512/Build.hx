@@ -12,6 +12,7 @@ class Build {
 		callLix("build/sha512/buildCpp.hxml", "C++");
 		callLix("build/sha512/buildCppGCGen.hxml", "C++ (HXCPP_GC_GENERATIONAL)");
 		callLix("build/sha512/buildCs.hxml", "C#");
+		callLix("build/sha512/buildCppia.hxml", "Cppia");
 		callLix("build/sha512/buildJava.hxml", "Java");
 		callLix("build/sha512/buildJvm.hxml", "JVM");
 		callLix("build/sha512/buildHl.hxml", "HL/Jit");
@@ -21,6 +22,7 @@ class Build {
 		callLix("build/sha512/buildNeko.hxml", "Neko");
 		callLix("build/sha512/buildPhp.hxml", "PHP7");
 		callLix("build/sha512/buildPython.hxml", "Python");
+		callLix("build/sha512/buildLua.hxml", "Lua");
 	}
 
 	/**

@@ -11,6 +11,7 @@ class Build {
 	public static function main() {
 		callLix("build/sha256/buildCpp.hxml", "C++");
 		callLix("build/sha256/buildCppGCGen.hxml", "C++ (HXCPP_GC_GENERATIONAL)");
+		callLix("build/sha256/buildCppia.hxml", "Cppia");
 		callLix("build/sha256/buildCs.hxml", "C#");
 		callLix("build/sha256/buildJava.hxml", "Java");
 		callLix("build/sha256/buildJvm.hxml", "JVM");
@@ -21,6 +22,7 @@ class Build {
 		callLix("build/sha256/buildNeko.hxml", "Neko");
 		callLix("build/sha256/buildPhp.hxml", "PHP7");
 		callLix("build/sha256/buildPython.hxml", "Python");
+		callLix("build/sha256/buildLua.hxml", "Lua");
 	}
 
 	/**

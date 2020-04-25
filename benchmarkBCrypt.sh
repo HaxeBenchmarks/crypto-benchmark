@@ -6,6 +6,7 @@ readonly DATA=$*
 
 ./out/cpp/BCryptBenchmark $DATA
 ./out/cppGCGen/BCryptBenchmark $DATA
+haxelib run hxcpp out/BCryptBenchmark.cppia 
 node out/BCryptBenchmark.js $DATA
 node out/BCryptBenchmark.es6.js $DATA
 java -jar out/java/BCryptBenchmark.jar $DATA
@@ -17,7 +18,7 @@ haxe build/bcrypt/common.hxml --run BCryptBenchmark $DATA
 php out/php/index.php $DATA
 neko out/BCryptBenchmark.n $DATA
 # python3 out/BCryptBenchmark.py $DATA
-# lua out/BCryptBenchmark.lua $DATA
+lua out/BCryptBenchmark.lua $DATA
 
 # second run to smooth graphs a little
 ./out/cpp/BCryptBenchmark $DATA

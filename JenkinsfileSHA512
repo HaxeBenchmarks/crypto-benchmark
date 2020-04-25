@@ -26,6 +26,7 @@ pipeline {
                 sh '''
                 cd versions/Haxe-3
                 ln -sfn ../../benchmarkSHA512.sh benchmark.sh
+                ln -sfn ../../installAndCompileHxcpp.sh . 
                 ln -sfn ../../build 
                 ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
@@ -40,6 +41,7 @@ pipeline {
                 sh '''
                 cd versions/Haxe-4
                 ln -sfn ../../benchmarkSHA512.sh benchmark.sh
+                ln -sfn ../../installAndCompileHxcpp.sh . 
                 ln -sfn ../../build 
                 ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
@@ -54,6 +56,7 @@ pipeline {
                 sh '''
                 cd versions/Haxe-nightly
                 ln -sfn ../../benchmarkSHA512.sh benchmark.sh
+                ln -sfn ../../installAndCompileHxcpp.sh . 
                 ln -sfn ../../build 
                 ln -sfn ../../buildAllSHA512.hxml buildAll.hxml
                 ln -sfn ../../buildConvertCsv.hxml 
@@ -138,6 +141,7 @@ pipeline {
                 cd versions/Haxe-3
                 readonly VER=`haxe -version`
                 echo "Running Haxe $VER benchmark"
+                ./installAndCompileHxcpp.sh
                 ./benchmark.sh | tee results.csv
                 '''
             }
@@ -150,6 +154,7 @@ pipeline {
                 cd versions/Haxe-4
                 readonly VER=`haxe -version`
                 echo "Running Haxe $VER benchmark"
+                ./installAndCompileHxcpp.sh
                 ./benchmark.sh | tee results.csv
                 '''
             }
@@ -162,6 +167,7 @@ pipeline {
                 cd versions/Haxe-nightly
                 readonly VER=`haxe -version`
                 echo "Running Haxe $VER benchmark"
+                ./installAndCompileHxcpp.sh
                 ./benchmark.sh | tee results.csv
                 '''
             }
